@@ -1,0 +1,153 @@
+html {
+    width: 100%;
+    height: auto;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    overflow: hidden;
+    font-family: 'Press Start 2P';
+}
+body {
+    width: 100%;
+    height: auto;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    font-size: 14px;
+}
+h1 {
+    font-size: 1.5em;
+}
+h2 {
+    font-size: 1.4em;
+}
+h3 {
+    font-size: 1.3em;
+}
+h4 {
+    font-size: 1.2em;
+}
+h5 {
+    font-size: 1.1em;
+}
+h6 {
+    font-size: 1.0em;
+}
+p {
+    font-size: 1em;
+}
+.Layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #04868E 0%, #363F55 100%);
+    padding: 64px 0 64px 0;
+    position: relative;
+    top: 0;
+}
+.Layout .children {
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 380px;
+    height: 270px;
+    position: absolute;
+    top: 18.8%;
+    z-index: 2;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: rgba(238, 238, 238, 0.8);
+}
+.Layout .gameboy {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 15%;
+    z-index: 1;
+}
+.Layout .control-layer {
+    width: 450px;
+    height: 665px;
+    position: absolute;
+    top: 16%;
+    border: 1px solid white;
+}
+
+.Layout .a-btn {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    right: 7.5%;
+    top: 59.5%;
+    z-index: 3;
+    border: 1px solid white;
+}
+.Layout .b-btn {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    right: 22.5%;
+    top: 63.5%;
+    z-index: 3;
+    border: 1px solid white;
+}
+
+.Layout .d-pad .up {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 16.6%;
+    top: 59.5%;
+    z-index: 3;
+    border: 1px solid white;
+}
+.Layout .d-pad .right {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 23%;
+    top: 63.7%;
+    z-index: 3;
+    border: 1px solid white;
+}
+.Layout .d-pad .down {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 16.6%;
+    top: 67.75%;
+    z-index: 3;
+    border: 1px solid white;
+}
+.Layout .d-pad .left {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 10.5%;
+    top: 63.7%;
+    z-index: 3;
+    border: 1px solid white;
+}
+
+.Layout .menu .select {
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    left: 36.8%;
+    top: 81.6%;
+    z-index: 3;
+    border: 1px solid white;
+}
+.Layout .menu .start {
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    right: 36.8%;
+    top: 81.6%;
+    z-index: 3;
+    border: 1px solid white;
+}
