@@ -1,7 +1,7 @@
-.HomePage h1 {
-    color: black;
-}
-.HomePage {
+.ContactPage {
     height: 600px;
     padding: 64px 16px 16px 16px;
+}
+.ContactPage h1 {
+    color: black;
 }
