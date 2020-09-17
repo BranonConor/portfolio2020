@@ -1,10 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './layout.css';
+import Nav from '../components/nav/nav';
 
 const Layout = ({ children }) => {
+
+    const [isMenuVisible, setIsMenuVisible] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuVisible(!isMenuVisible);
+    }
+
     return (
     <div className='Layout container'>
         <div className="children">
+            <Nav isMenuVisible={isMenuVisible} />
             { children }
         </div>
         
@@ -1014,7 +1023,6 @@ const Layout = ({ children }) => {
                 </defs>
             </svg>
         </div>
-           
         
         <div className='control-layer'>
             <div className="a-btn"></div>
@@ -1029,7 +1037,7 @@ const Layout = ({ children }) => {
             
             <div className="menu">
                 <div className="select"></div>
-                <div className="start"></div>
+                <div className="start" onClick={toggleMenu}></div>
             </div>
         </div>
     </div>

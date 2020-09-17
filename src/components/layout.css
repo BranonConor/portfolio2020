@@ -151,3 +151,9 @@ p {
     z-index: 3;
     border: 1px solid white;
 }
+.Layout .menu .select:hover {
+    cursor: pointer;
+}
+.Layout .menu .start:hover {
+    cursor: pointer;
+}
